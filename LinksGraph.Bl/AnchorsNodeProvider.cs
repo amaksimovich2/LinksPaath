@@ -3,7 +3,7 @@ using LinksGraph.Bl.Abstractions;
 
 namespace LinksGraph.Bl
 {
-    public class AnchorsDataProvider: INodesProvider<string>
+    public class AnchorsNodeProvider: INodesProvider<string>
     {
         public async Task<IEnumerable<string>> GetLinkedNodes(string url)
         {
