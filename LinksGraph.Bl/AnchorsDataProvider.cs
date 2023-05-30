@@ -1,4 +1,5 @@
 ﻿using HtmlAgilityPack;
+using LinksGraph.Bl.Abstractions;
 
 namespace LinksGraph.Bl
 {
@@ -51,6 +52,7 @@ namespace LinksGraph.Bl
             // Find all the anchor tags in the HTML
             IEnumerable<HtmlNode> anchorTags = document.DocumentNode.Descendants("a");
 
+            //Return href attribute values
             return anchorTags.Select(x => x.GetAttributeValue("href", ""));
         }
     }

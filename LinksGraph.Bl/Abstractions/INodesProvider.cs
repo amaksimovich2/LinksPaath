@@ -1,4 +1,4 @@
-﻿namespace LinksGraph.Bl
+﻿namespace LinksGraph.Bl.Abstractions
 {
     public interface INodesProvider<T>
     {
